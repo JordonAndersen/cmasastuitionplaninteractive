@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" contnet="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Tuition Plan</title>
+</head>
+
+<body>
+
+  <div class="toggle-container">
+    <!-- School Level Toggle -->
+    <div class="toggle-group school-level">
+      <input onclick="elemPlan()" type="radio" id="elementary" name="school-level" class="toggle-input" checked >
+      <label for="elementary" class="toggle-option">Elementary School</label>
+
+      <input onclick="msPlan()"   type="radio" id="middle" name="school-level" class="toggle-input">
+      <label for="middle" class="toggle-option">Middle School</label>
+
+      <input  onclick="hsPlan()" type="radio" id="high" name="school-level" class="toggle-input">
+      <label for="high" class="toggle-option">High School</label>
+    </div>
+
+    <!-- Tuition Plan Toggle -->
+    <div class="toggle-group tuition-plan">
+      <input type="radio" id="annual" name="tuition-plan" class="toggle-input" checked>
+      <label for="annual" class="toggle-option">Annual</label>
+
+      <input type="radio" id="semester" name="tuition-plan" class="toggle-input">
+      <label for="semester" class="toggle-option">Semester</label>
+    </div>
+  </div>
+  <div class="tuitionplans">
+    <!-- Tuition Plan Essential Care Plan -->
+    <div class="tuitioncard">
+      <img src="img/Elementary icon 3.png" alt="" class="tutionicon" id="essentialicon">
+      <p class="tuitionname">Essential Care Plan</p>
+      <p class="tuitionprice" id="essentialprice">$6,600 Tuition</p>
+      <!-- <p class="tuitionpricesubtxt">$445 Registration Fee + $895 (Full Year)</p> -->
+      <div class="center">
+        <div class="whatsincludedred">What’s Included:</div>
+      </div>
+      <ul class="tuitiondiscrip">
+        <li>Up to 5 Full Year Courses</li>
+<li>4 Core + 1 Elective</li>
+<li>PEC Support Level 1 (1 Day/Week)</li>
+<li>Weekly Homeroom</li>
+<li>CI Support</li>
+<li>Limited Clubs (1)</li>
+<li>Regional Gathering Opportunities</li>
+<li>International Trip Opportunities</li>
+<li>Limited Elective Access</li>
+      </ul>
+      <div class="center">
+        <div class="powerupsred">Power-Ups</div>
+      </div>
+      <p class="powerupsubtext">
+        Power ups
+      </p>
+      <p class="powerupsubtext">
+        Power ups
+      </p>
+      <p class="powerupsubtext">
+        Power ups
+      </p>
+
+    </div>
+    <!-- Tuition Plan Premier Care Plan -->
+    <div class="tuitioncard">
+      <img src="img/Elementary icon 2.png" alt="" class="tutionicon" id="premiericon">
+      <p class="tuitionname">Premier Car Plan</p>
+      <p class="tuitionprice" id="premierprice">$7,750 Tuition</p>
+      <!-- <p class="tuitionpricesubtxt">$445 Registration Fee + $895 (Full Year)</p> -->
+      <div class="center">
+        <div class="whatsincludedblue">What’s Included:</div>
+      </div>
+      <ul class="tuitiondiscrip">
+        <li>Up to 6 Full Year Courses</li>
+<li>4 Core + 2 Electives</li>
+<li>PEC Support Level 1 (1 Day/Week)</li>
+<li>Weekly Homeroom</li>
+<li>CI Support</li>
+<li>Unlimited Club Access</li>
+<li>Regional Gathering Opportunities</li>
+<li>International Trip Opportunities</li>
+<li>Full Elective Course Access (200+ Courses)</li>
+      </ul>
+      <div class="center">
+        <div class="powerupsblue">Power-Ups</div>
+      </div>
+      <p class="powerupsubtext">
+        Power ups
+      </p>
+      <p class="powerupsubtext">
+        Power ups
+      </p>
+      <p class="powerupsubtext">
+        Power ups
+      </p>
+
+    </div>
+     <!-- Tuition Plan Personalized Care Plan -->
+     <div class="tuitioncard">
+      <img src="img/Elementary icon 1.png" alt="" class="tutionicon" id="personalizedicon">
+      <p class="tuitionname">Personalized Care Plan</p>
+      <p class="tuitionprice" id="personalizedprice">$2,750 Tuition</p>
+      <!-- <p class="tuitionpricesubtxt">$445 Registration Fee + $895 (Full Year)</p> -->
+      <div class="center">
+        <div class="whatsincludedgreen">What’s Included:</div>
+      </div>
+      <ul class="tuitiondiscrip">
+        <li>Low Annual Base Tuition + Pay as you go for Courses</li>
+        <li>PEC Support Level 1 (1 Day/Week)</li>
+        <li>Weekly Homeroom</li>
+        <li>CI Support</li>
+        <li>Unlimited Club Access</li>
+        <li>Regional Gathering Opportunities</li>
+        <li>International Trip Opportunities</li>
+        <li>Full Elective Course Access</li>
+      </ul>
+      <div class="center">
+        <div class="powerupsgreen">Power-Ups</div>
+      </div>
+      <p class="powerupsubtext">
+        Power ups
+      </p>
+      <p class="powerupsubtext">
+        Power ups
+      </p>
+      <p class="powerupsubtext">
+        Power ups
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  </div>
+  <script src="toggle.js"></script>
+</body>
+
+</html>
