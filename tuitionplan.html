@@ -15,22 +15,24 @@
   <div class="toggle-container">
     <!-- School Level Toggle -->
     <div class="toggle-group school-level">
-      <input onclick="elemPlan()" type="radio" id="elementary" name="school-level" class="toggle-input" checked >
+      <input onclick="selection()" type="radio" id="elementary" 
+      value="elementary"
+      name="school-level" class="toggle-input" checked >
       <label for="elementary" class="toggle-option">Elementary School</label>
 
-      <input onclick="msPlan()"   type="radio" id="middle" name="school-level" class="toggle-input">
+      <input onclick="selection()" value="middle" type="radio" id="middle" name="school-level" class="toggle-input">
       <label for="middle" class="toggle-option">Middle School</label>
 
-      <input  onclick="hsPlan()" type="radio" id="high" name="school-level" class="toggle-input">
+      <input  onclick="selection()" value="high" type="radio" id="high" name="school-level" class="toggle-input">
       <label for="high" class="toggle-option">High School</label>
     </div>
 
     <!-- Tuition Plan Toggle -->
     <div class="toggle-group tuition-plan">
-      <input type="radio" id="annual" name="tuition-plan" class="toggle-input" checked>
+      <input onclick="selection()" value="annual" type="radio" id="annual" name="tuition-plan" class="toggle-input" checked>
       <label for="annual" class="toggle-option">Annual</label>
 
-      <input type="radio" id="semester" name="tuition-plan" class="toggle-input">
+      <input onclick="selection()" value="semester" type="radio" id="semester" name="tuition-plan" class="toggle-input">
       <label for="semester" class="toggle-option">Semester</label>
     </div>
   </div>
@@ -44,7 +46,7 @@
       <div class="center">
         <div class="whatsincludedred">What’s Included:</div>
       </div>
-      <ul class="tuitiondiscrip">
+      <ul class="tuitiondescrip" id="essentialdescrip">
         <li>Up to 5 Full Year Courses</li>
 <li>4 Core + 1 Elective</li>
 <li>PEC Support Level 1 (1 Day/Week)</li>
@@ -78,7 +80,7 @@
       <div class="center">
         <div class="whatsincludedblue">What’s Included:</div>
       </div>
-      <ul class="tuitiondiscrip">
+      <ul class="tuitiondescrip" id="premierdescrip">
         <li>Up to 6 Full Year Courses</li>
 <li>4 Core + 2 Electives</li>
 <li>PEC Support Level 1 (1 Day/Week)</li>
@@ -112,7 +114,7 @@
       <div class="center">
         <div class="whatsincludedgreen">What’s Included:</div>
       </div>
-      <ul class="tuitiondiscrip">
+      <ul class="tuitiondescrip" id="personalizeddescrip">
         <li>Low Annual Base Tuition + Pay as you go for Courses</li>
         <li>PEC Support Level 1 (1 Day/Week)</li>
         <li>Weekly Homeroom</li>
