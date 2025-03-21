@@ -93,28 +93,27 @@ function selection() {
     else{
         if (schoolType == "elementary") { 
             // updating personalizd card          
-            document.getElementById("personalizedprice").innerHTML = "$2,750 Tuition"
-            document.getElementById("personalizeddescrip").innerHTML = ""
+            document.getElementById("personalizedprice").innerHTML = "NOT AVAILABLE FOR SEMESTER PRICING"
+          
             // updating essential card             
-            document.getElementById("essentialprice").innerHTML = "$6,660 Tuition"
-            document.getElementById("essentialdescrip").innerHTML = ""
+            document.getElementById("essentialprice").innerHTML = "NOT AVAILABLE FOR SEMESTER PRICING"
+         
             // updating premier card 
-            document.getElementById("premierprice").innerHTML = "$7,750 Tuition"
-            document.getElementById("premierdescrip").innerHTML = ""
+            document.getElementById("premierprice").innerHTML = "NOT AVAILABLE FOR SEMESTER PRICING"
+          
         }
         // updating personalized card 
         else if (schoolType == "middle") {
             console.log("Middle School is loaded")
-            // updating personalized card 
-          
-            document.getElementById("personalizedprice").innerHTML = "$2,750 Tuition"
+            // updating personalized card           
+            document.getElementById("personalizedprice").innerHTML = "NOT AVAILABLE FOR SEMESTER PRICING"
             document.getElementById("personalizeddescrip").innerHTML = ""
             // updating essential card 
-            document.getElementById("essentialprice").innerHTML = "$7,500 Tuition"
-            document.getElementById("essentialdescrip").innerHTML = ""
+            document.getElementById("essentialprice").innerHTML = "$4,500 Tuition"
+           document.getElementById("essentialdescrip").innerHTML = "<li>Up to 5 Full Year Courses</li>  <li>4 Core + 1 Elective</li>  <li>PEC Support Level 1 (1 Day/Week)</li>  <li>Weekly Homeroom</li>  <li>CI Support</li>  <li>Limited Clubs (1)</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Limited Elective Choices *</li>  <li>No HS Courses/Credit</li>"
             // updating premier card 
-            document.getElementById("premierprice").innerHTML = "$8,500 Tuition"
-            document.getElementById("premierdescrip").innerHTML = ""
+            document.getElementById("premierprice").innerHTML = "$5,00 Tuition"
+           document.getElementById("premierdescrip").innerHTML = "<li>Up to 6 Full Year Courses</li>  <li>4 Core + 2 Electives</li>  <li>PEC Support Level 1 (1 Day/Week)</li>  <li>Weekly Homeroom</li>  <li>CI Support</li>  <li>Unlimited Club Access</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Full Elective Course Access</li>  <li>HS Courses/Credit</li>"
 
 
         }
@@ -122,13 +121,13 @@ function selection() {
             console.log("High School is loaded")
             // updating personalized card             
             document.getElementById("personalizedprice").innerHTML = "$2,750 Tuition"
-            document.getElementById("personalizeddescrip").innerHTML = ""
+             document.getElementById("personalizeddescrip").innerHTML = " NOT VAILABLE FOR SEMESTER PRICING"
             // updating essential card 
-            document.getElementById("essentialprice").innerHTML = "$2,750 Tuition"
-            document.getElementById("essentialdescrip").innerHTML = ""
+            document.getElementById("essentialprice").innerHTML = "$5,700 Tuition"
+            document.getElementById("essentialdescrip").innerHTML = " <li>Up to 5 Full Year Courses</li>  <li>4 Core + 1 Elective</li>  <li>Standard Diploma (Recommended)</li>  <li>PEC Support Level 1 (1 Day/Week)</li>  <li>Weekly Homeroom</li>  <li>CI Support</li>  <li>Limited Clubs (1)</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Limited Elective Choices</li>  <li>Honors, AP, and Dual Enrollment not included</li>"
             // updating premier card 
-            document.getElementById("premierprice").innerHTML = "$2,750 Tuition"
-            document.getElementById("premierdescrip").innerHTML = ""
+            document.getElementById("premierprice").innerHTML = "$6,700 Tuition"
+            document.getElementById("premierdescrip").innerHTML = " <li>Up to 6 Full Year Courses</li>  <li>4 Core + 2 Electives</li>  <li>PEC Support Level 1 (1 Day/Week)</li>  <li>Weekly Homeroom</li>  <li>CI Support</li>  <li>Unlimited Club Access</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Full Elective Course Access</li>  <li>HS Courses/Credit</li>"
 
         }
 
