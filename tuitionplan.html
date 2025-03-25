@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" contnet="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="tuitionplan.css">
 
   <title>Tuition Plan</title>
 </head>
@@ -15,21 +15,33 @@
   <div class="toggle-container">
     <!-- School Level Toggle -->
     <div class="toggle-group school-level">
-      <input onclick="selection()" type="radio" id="elementary" 
-      value="elementary"
-      name="school-level" class="toggle-input" checked >
+      <input onclick="selection()" type="radio" id="elementary" value="elementary" name="school-level"
+        class="toggle-input" checked>
       <label for="elementary" class="toggle-option">Elementary School</label>
 
       <input onclick="selection()" value="middle" type="radio" id="middle" name="school-level" class="toggle-input">
       <label for="middle" class="toggle-option">Middle School</label>
 
-      <input  onclick="selection()" value="high" type="radio" id="high" name="school-level" class="toggle-input">
+      <input onclick="selection()" value="high" type="radio" id="high" name="school-level" class="toggle-input">
       <label for="high" class="toggle-option">High School</label>
+    </div>
+
+    <!--Registration Info-->
+    <div class="registrationcard">
+      <p class="registrationcardtext">Registration Fee:<br>
+        <span class="registrationcardsubtext" >Semester: $200 <br>
+        Annual: $325</span>
+      </p>
+
+        <p class="registrationcardtext">International Registration Fee:<br>
+          <span class="registrationcardsubtext" > Semester: $650<br>
+        Annual $995</p></span>
     </div>
 
     <!-- Tuition Plan Toggle -->
     <div class="toggle-group tuition-plan">
-      <input onclick="selection()" value="annual" type="radio" id="annual" name="tuition-plan" class="toggle-input" checked>
+      <input onclick="selection()" value="annual" type="radio" id="annual" name="tuition-plan" class="toggle-input"
+        checked>
       <label for="annual" class="toggle-option">Annual</label>
 
       <input onclick="selection()" value="semester" type="radio" id="semester" name="tuition-plan" class="toggle-input">
@@ -39,80 +51,108 @@
   <div class="tuitionplans">
     <!-- Tuition Plan Essential Care Plan -->
     <div class="tuitioncard">
-      <img src="img/Elementary icon 3.png" alt="" class="tutionicon" id="essentialicon">
+      <img src="https://www.cmasas.org/sites/default/files/2025-03/Elementary%20icon%20essential.png" alt=""
+        class="tutionicon" id="essentialicon">
       <p class="tuitionname">Essential Care Plan</p>
       <p class="tuitionprice" id="essentialprice">$6,600 Tuition</p>
-      <!-- <p class="tuitionpricesubtxt">$445 Registration Fee + $895 (Full Year)</p> -->
+
       <div class="center">
-        <div class="whatsincludedred">What’s Included:</div>
+        <div class="whatsincludedblue" id="essentialincluded">What’s Included:</div>
       </div>
       <ul class="tuitiondescrip" id="essentialdescrip">
         <li>Up to 5 Full Year Courses</li>
-<li>4 Core + 1 Elective</li>
-<li>PEC Support Level 1 (1 Day/Week)</li>
-<li>Weekly Homeroom</li>
-<li>CI Support</li>
-<li>Limited Clubs (1)</li>
-<li>Regional Gathering Opportunities</li>
-<li>International Trip Opportunities</li>
-<li>Limited Elective Access</li>
+        <li>4 Core + 1 Elective</li>
+        <li>PEC Support Level 1 (1 Day/Week)</li>
+        <li>Weekly Homeroom</li>
+        <li>CI Support</li>
+        <li>Limited Clubs (1)</li>
+        <li>Regional Gathering Opportunities</li>
+        <li>International Trip Opportunities</li>
+        <li>Limited Elective Access*</li>
+        <li style="list-style-type: none;   font-size: 12px; ">*Included elective courses denoted in course catalog</li>
+
       </ul>
-      <div class="center">
-        <div class="powerupsred">Power-Ups</div>
+      <div id="essentialpowerups">
+        <div class="tuitionline"></div>
+        <div class="center">
+          <div class="powerupsred">Power-Ups</div>
+        </div>
+
+        <p class="poweruptext">
+          PEC Level 2: 2 Total Days/Week
+        </p>
+        <p class="powerupsubtext">
+          $1,500 (Semester) $2,500 (Annual)
+        </p>
+        <p class="poweruptext">
+          PEC Level 3: 3 Total Days/Week + Daily Check-Ins
+        </p>
+        <p class="powerupsubtext">
+          $3,000 (Semester) $5,000 (Annual)
+        </p>
+
+        <p class="powerupsubtext">
+          Payment Plan Available
+        </p>
       </div>
-      <p class="powerupsubtext">
-        Power ups
-      </p>
-      <p class="powerupsubtext">
-        Power ups
-      </p>
-      <p class="powerupsubtext">
-        Power ups
-      </p>
 
     </div>
     <!-- Tuition Plan Premier Care Plan -->
     <div class="tuitioncard">
-      <img src="img/Elementary icon 2.png" alt="" class="tutionicon" id="premiericon">
-      <p class="tuitionname">Premier Car Plan</p>
+      <img src="https://www.cmasas.org/sites/default/files/2025-03/Most%20Popular%20Icon.png" class="mostpopular" id="mostpopular">
+      <img src="https://www.cmasas.org/sites/default/files/2025-03/Elementary%20icon%20premier.png" alt=""
+        class="tutionicon" id="premiericon">
+      <p class="tuitionname">Premier Care Plan</p>
       <p class="tuitionprice" id="premierprice">$7,750 Tuition</p>
-      <!-- <p class="tuitionpricesubtxt">$445 Registration Fee + $895 (Full Year)</p> -->
+ 
       <div class="center">
-        <div class="whatsincludedblue">What’s Included:</div>
+        <div class="whatsincludedgreen" id="premierincluded">What’s Included:</div>
       </div>
       <ul class="tuitiondescrip" id="premierdescrip">
         <li>Up to 6 Full Year Courses</li>
-<li>4 Core + 2 Electives</li>
-<li>PEC Support Level 1 (1 Day/Week)</li>
-<li>Weekly Homeroom</li>
-<li>CI Support</li>
-<li>Unlimited Club Access</li>
-<li>Regional Gathering Opportunities</li>
-<li>International Trip Opportunities</li>
-<li>Full Elective Course Access (200+ Courses)</li>
+        <li>4 Core + 2 Electives</li>
+        <li>PEC Support Level 1 (1 Day/Week)</li>
+        <li>Weekly Homeroom</li>
+        <li>CI Support</li>
+        <li>Unlimited Club Access</li>
+        <li>Regional Gathering Opportunities</li>
+        <li>International Trip Opportunities</li>
+        <li>Full Elective Course Access (200+ Courses)</li>
       </ul>
-      <div class="center">
-        <div class="powerupsblue">Power-Ups</div>
-      </div>
-      <p class="powerupsubtext">
-        Power ups
-      </p>
-      <p class="powerupsubtext">
-        Power ups
-      </p>
-      <p class="powerupsubtext">
-        Power ups
-      </p>
+      <div id="premierpowerups">
+        <div class="tuitionline"></div>
+        <div class="center">
 
+          <div class="powerupsblue">Power-Ups</div>
+        </div>
+        <p class="poweruptext">
+          PEC Level 2: 2 Total Days/Week
+        </p>
+        <p class="powerupsubtext">
+          $1,500 (Semester) $2,500 (Annual)
+        </p>
+        <p class="poweruptext">
+          PEC Level 3: 3 Total Days/Week + Daily Check-Ins
+        </p>
+        <p class="powerupsubtext">
+          $3,000 (Semester) $5,000 (Annual)
+        </p>
+
+
+        <p class="powerupsubtext">
+          Payment Plan Available
+        </p>
+      </div>
     </div>
-     <!-- Tuition Plan Personalized Care Plan -->
-     <div class="tuitioncard">
-      <img src="img/Elementary icon 1.png" alt="" class="tutionicon" id="personalizedicon">
+    <!-- Tuition Plan Personalized Care Plan -->
+    <div class="tuitioncard">
+      <img src="https://www.cmasas.org/sites/default/files/2025-03/Elementary%20icon%20personalized.png" alt=""
+        class="tutionicon" id="personalizedicon">
       <p class="tuitionname">Personalized Care Plan</p>
       <p class="tuitionprice" id="personalizedprice">$2,750 Tuition</p>
       <!-- <p class="tuitionpricesubtxt">$445 Registration Fee + $895 (Full Year)</p> -->
       <div class="center">
-        <div class="whatsincludedgreen">What’s Included:</div>
+        <div class="whatsincludedred" id="personalizedincluded">What’s Included:</div>
       </div>
       <ul class="tuitiondescrip" id="personalizeddescrip">
         <li>Low Annual Base Tuition + Pay as you go for Courses</li>
@@ -124,18 +164,30 @@
         <li>International Trip Opportunities</li>
         <li>Full Elective Course Access</li>
       </ul>
-      <div class="center">
-        <div class="powerupsgreen">Power-Ups</div>
-      </div>
-      <p class="powerupsubtext">
-        Power ups
-      </p>
-      <p class="powerupsubtext">
-        Power ups
-      </p>
-      <p class="powerupsubtext">
-        Power ups
-      </p>
+      <div id="personalizedpowerups">
+        <div class="tuitionline"></div>
+        <div class="center">
+          <div class="powerupsgreen">Power-Ups</div>
+        </div>
+        <p class="poweruptext">
+          PEC Level 2: 2 Total Days/Week
+        </p>
+        <p class="powerupsubtext">
+          $1,500 (Semester) $2,500 (Annual)
+        </p>
+        <p class="poweruptext">
+          PEC Level 3: 3 Total Days/Week + Daily Check-Ins
+        </p>
+        <p class="powerupsubtext">
+          $3,000 (Semester) $5,000 (Annual)
+        </p>
+
+
+        <p class="powerupsubtext">
+          Payment Plan Available
+        </p>
+        </div>
+      
 
     </div>
 

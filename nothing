@@ -1,0 +1,9 @@
+document.getElementById("personalizedpowerups").innerHTML= ""
+document.getElementById("essentialpowerups").innerHTML= ""
+document.getElementById("premierpowerups").innerHTML= ""
+
+mostwanted when not avalable 
+top: 43%;
+
+avalable
+top: 36%;
