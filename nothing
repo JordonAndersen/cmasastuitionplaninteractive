@@ -7,3 +7,18 @@ top: 43%;
 
 avalable
 top: 36%;
+
+
+document.getElementById("personalizedtuitionname").innerHTML = "<a href='https://store.cmasas.org/elementary-personalized-care-plan/'>Personalized Care Plan</a> "
+document.getElementById("essentialtuitionname").innerHTML = "<a href='https://store.cmasas.org/elementary-essential-care-plan/'>Essential Care Plan</a> "
+document.getElementById("premietuitionname").innerHTML = "<a href='https://store.cmasas.org/elementary-premier-care-plan/'>Premier Care Plan</a>"
+
+document.getElementById("personalizedtuitionname").innerHTML = "<https://store.cmasas.org/high-school-personalized-care-year-plan/'>Personalized Care Plan</a> "
+document.getElementById("essentialtuitionname").innerHTML = "<a href='https://store.cmasas.org/high-school-essential-care-plan/'>Essential Care Plan</a> "
+document.getElementById("premietuitionname").innerHTML = "<a href='https://store.cmasas.org/high-school-premier-care-plan/'>Premier Care Plan</a>"
+
+
+
+document.getElementById("personalizedtuitionname").innerHTML = "<https://store.cmasas.org/middle-school-personalized-care-plan/'>Personalized Care Plan</a> "
+document.getElementById("essentialtuitionname").innerHTML = "<a href='https://store.cmasas.org/middle-school-essential-care-plan/'>Essential Care Plan</a> "
+document.getElementById("premietuitionname").innerHTML = "<a href='https://store.cmasas.org/middle-school-premier-care-plan/'>Premier Care Plan</a>"

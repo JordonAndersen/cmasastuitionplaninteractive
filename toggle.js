@@ -50,74 +50,89 @@ function selection() {
     //Checking to see if the annual toggle is selected. 
     if (paymentType == "annual") {
         if (schoolType == "elementary") {
+            //updating links for the tuition plan names 
+            document.getElementById("personalizedtuitionname").innerHTML = "<a href='https://store.cmasas.org/elementary-personalized-care-plan/'>Personalized Care Plan</a> "
+            document.getElementById("essentialtuitionname").innerHTML = "<a href='https://store.cmasas.org/elementary-essential-care-plan/'>Essential Care Plan</a> "
+            document.getElementById("premietuitionname").innerHTML = "<a href='https://store.cmasas.org/elementary-premier-care-plan/'>Premier Care Plan</a>"
+
 
             document.getElementById("personalizeddescrip").className = "tuitiondescrip"
             // updating personalized card          
             document.getElementById("personalizedprice").innerHTML = "$2,750 Tuition"
             document.getElementById("personalizedincluded").innerHTML = "Whats included:"
-            document.getElementById("personalizeddescrip").innerHTML = "<li>Low Annual Base Tuition + Pay as you go for Courses</li>        <li>PEC Support Level 1 (1 Day/Week)</li>        <li>Weekly Homeroom</li>        <li>CI Support</li>        <li>Unlimited Club Access</li>        <li>Regional Gathering Opportunities</li>        <li>International Trip Opportunities</li>        <li>Full Elective Course Access</li>"
-            document.getElementById("personalizedpowerups").innerHTML= "<div class='tuitionline'></div>        <div class='center'>          <div class='powerupsgreen'>Power-Ups</div>        </div>        <p class='poweruptext'>          PEC Level 2: 2 Total Days/Week        </p>        <p class='powerupsubtext'>          $1,500 (Semester) $2,500 (Annual)        </p>        <p class='poweruptext'>          PEC Level 3: 3 Total Days/Week + Daily Check-Ins        </p>        <p class='powerupsubtext'>          $3,000 (Semester) $5,000 (Annual)        </p>        <p class='powerupsubtext'>          Payment Plan Available        </p>"
+            document.getElementById("personalizeddescrip").innerHTML = "<li>Low Annual Base Tuition + Pay as You Go for Courses</li>        <li>Personalized Education Coach (PEC) Support Level 1 (1 Day Per Week)</li>        <li>Weekly Homeroom</li>        <li>Course Instructor (CI) Support</li>        <li>Unlimited Club Access</li>        <li>Regional Gathering Opportunities</li>        <li>International Trip Opportunities</li>        <li>Full Elective Course Access</li>"
+            document.getElementById("personalizedpowerups").innerHTML = "<div class='tuitionline'></div>        <div class='center'>          <div class='powerupsred'>Power-Ups</div>        </div>        <p class='poweruptext'>          PEC Level 2: 2 Total Days/Week        </p>        <p class='powerupsubtext'>          $1,500 (Semester) $2,500 (Annual)        </p>        <p class='poweruptext'>          PEC Level 3: 3 Total Days/Week + Daily Check-Ins        </p>        <p class='powerupsubtext'>          $3,000 (Semester) $5,000 (Annual)        </p>        <p class='powerupsubtext'>          Payment Plan Available        </p> <div class='poweruptext'>          Course Pricing: $895 Full Year Course        </div>"
             // updating essential card    
             document.getElementById("essentialdescrip").className = "tuitiondescrip"
             document.getElementById("essentialprice").innerHTML = "$6,660 Tuition"
             document.getElementById("essentialincluded").innerHTML = "Whats included:"
-            document.getElementById("essentialdescrip").innerHTML = "<li>Up to 5 Full Year Courses</li> <li>4 Core + 1 Elective</li>  <li>PEC Support Level 1 (1 Day/Week)</li>  <li>Weekly Homeroom</li>  <li>CI Support</li>  <li>Limited Clubs (1)</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Limited Elective Access*</li>  <li style='list-style-type: none;   font-size: 12px;'>*Included elective courses denoted in course catalog</li>"
-             document.getElementById("essentialpowerups").innerHTML= "<div class='tuitionline'></div>        <div class='center'>          <div class='powerupsgreen'>Power-Ups</div>        </div>        <p class='poweruptext'>          PEC Level 2: 2 Total Days/Week        </p>        <p class='powerupsubtext'>          $1,500 (Semester) $2,500 (Annual)        </p>        <p class='poweruptext'>          PEC Level 3: 3 Total Days/Week + Daily Check-Ins        </p>        <p class='powerupsubtext'>          $3,000 (Semester) $5,000 (Annual)        </p>        <p class='powerupsubtext'>          Payment Plan Available        </p>"
+            document.getElementById("essentialdescrip").innerHTML = "<li>Up to 5 Full Year Courses</li> <li>4 Core + 1 Elective</li>  <li>Personalized Education Coach (PEC) Support Level 1 (1 Day Per Week)</li>  <li>Weekly Homeroom</li>  <li>Course Instructor (CI) Support</li>  <li>Limited Clubs (1)</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Limited Elective Access*</li>  <li style='list-style-type: none;   font-size: 12px;'>*Included elective courses denoted in course catalog</li>"
+            document.getElementById("essentialpowerups").innerHTML = "<div class='tuitionline'></div>        <div class='center'>          <div class='powerupsblue'>Power-Ups</div>        </div>        <p class='poweruptext'>          PEC Level 2: 2 Total Days/Week        </p>        <p class='powerupsubtext'>          $1,500 (Semester) $2,500 (Annual)        </p>        <p class='poweruptext'>          PEC Level 3: 3 Total Days/Week + Daily Check-Ins        </p>        <p class='powerupsubtext'>          $3,000 (Semester) $5,000 (Annual)        </p>        <p class='powerupsubtext'>          Payment Plan Available        </p>"
             // updating premier card 
-             document.getElementById("mostpopular").className = "mostpopular"
+            document.getElementById("mostpopular").className = "mostpopular"
             document.getElementById("premierdescrip").className = "tuitiondescrip"
             document.getElementById("premierprice").innerHTML = "$7,750 Tuition"
             document.getElementById("premierincluded").innerHTML = "Whats included:"
-            document.getElementById("premierdescrip").innerHTML = "<li>Up to 6 Full Year Courses</li><li>4 Core + 2 Electives</li><li>PEC Support Level 1 (1 Day/Week)</li><li>Weekly Homeroom</li><li>CI Support</li><li>Unlimited Club Access</li><li>Regional Gathering Opportunities</li><li>International Trip Opportunities</li><li>Full Elective Course Access (200+ Courses)</li>"
-             document.getElementById("premierpowerups").innerHTML= "<div class='tuitionline'></div>        <div class='center'>          <div class='powerupsgreen'>Power-Ups</div>        </div>        <p class='poweruptext'>          PEC Level 2: 2 Total Days/Week        </p>        <p class='powerupsubtext'>          $1,500 (Semester) $2,500 (Annual)        </p>        <p class='poweruptext'>          PEC Level 3: 3 Total Days/Week + Daily Check-Ins        </p>        <p class='powerupsubtext'>          $3,000 (Semester) $5,000 (Annual)        </p>        <p class='powerupsubtext'>          Payment Plan Available        </p>"
+            document.getElementById("premierdescrip").innerHTML = "<li>Up to 6 Full Year Courses</li><li>4 Core + 2 Electives</li><li>Personalized Education Coach (PEC) Support Level 1 (1 Day Per Week)</li><li>Weekly Homeroom</li><li>Course Instructor (CI) Support</li><li>Unlimited Club Access</li><li>Regional Gathering Opportunities</li><li>International Trip Opportunities</li><li>Full Elective Course Access (200+ Courses)</li>"
+            document.getElementById("premierpowerups").innerHTML = "<div class='tuitionline'></div>        <div class='center'>          <div class='powerupsgreen'>Power-Ups</div>        </div>        <p class='poweruptext'>          PEC Level 2: 2 Total Days/Week        </p>        <p class='powerupsubtext'>          $1,500 (Semester) $2,500 (Annual)        </p>        <p class='poweruptext'>          PEC Level 3: 3 Total Days/Week + Daily Check-Ins        </p>        <p class='powerupsubtext'>          $3,000 (Semester) $5,000 (Annual)        </p>        <p class='powerupsubtext'>          Payment Plan Available        </p>"
         }
 
         else if (schoolType == "middle") {
             console.log("Middle School is loaded")
+            //updating links for the tuition plan names             
+            document.getElementById("personalizedtuitionname").innerHTML = "<https://store.cmasas.org/middle-school-personalized-care-plan/'>Personalized Care Plan</a> "
+            document.getElementById("essentialtuitionname").innerHTML = "<a href='https://store.cmasas.org/middle-school-essential-care-plan/'>Essential Care Plan</a> "
+            document.getElementById("premietuitionname").innerHTML = "<a href='https://store.cmasas.org/middle-school-premier-care-plan/'>Premier Care Plan</a>"
+
             // updating personalized card 
             document.getElementById("personalizeddescrip").className = "tuitiondescrip"
             document.getElementById("personalizedprice").innerHTML = "$2,750 Tuition"
             document.getElementById("personalizedincluded").innerHTML = "Whats included:"
-            document.getElementById("personalizeddescrip").innerHTML = "<li>Low Annual Base Tuition + Pay as you go for Courses</li>  <li>PEC Support Level 1 (1 Day/Week)</li>  <li>Weekly Homeroom</li>  <li>CI Support</li>  <li>Unlimited Club Access</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Full Elective Access (200+ Courses) </li> "
-            document.getElementById("personalizedpowerups").innerHTML= "<div class='tuitionline'>&nbsp;</div><div class='center'><div class='powerupsblue'>Power-Ups</div></div><p class='poweruptext'>PEC Level 2: 2 Total Days/Week</p><p class='powerupsubtext'>$1,500 (Semester) $2,500 (Annual)</p><p class='poweruptext'>PEC Level 3: 3 Total Days/Week + Daily Check-Ins</p><p class='powerupsubtext'>$3,000 (Semester) $5,000 (Annual)</p><p class='powerupsubtext'>Payment Plan Available</p>"
+            document.getElementById("personalizeddescrip").innerHTML = "<li>Low Annual Base Tuition + Pay as You Go for Courses</li>  <li>Personalized Education Coach (PEC) Support Level 1 (1 Day Per Week)</li>  <li>Weekly Homeroom</li>  <li>Course Instructor (CI) Support</li>  <li>Unlimited Club Access</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Full Elective Access (200+ Courses) </li> "
+            document.getElementById("personalizedpowerups").innerHTML = "<div class='tuitionline'>&nbsp;</div><div class='center'><div class='powerupsred'>Power-Ups</div></div><p class='poweruptext'>PEC Level 2: 2 Total Days Per Week</p><p class='powerupsubtext'>$1,500 (Semester) $2,500 (Annual)</p><p class='poweruptext'>PEC Level 3: 3 Total Days Per Week + Daily Check-Ins</p><p class='powerupsubtext'>$3,000 (Semester) $5,000 (Annual)</p><p class='powerupsubtext'>Payment Plan Available</p> </p> <div class='poweruptext'>          Course Pricing: $725 per semester        </div>"
             // updating essential card 
             document.getElementById("essentialdescrip").className = "tuitiondescrip"
             document.getElementById("essentialprice").innerHTML = "$7,500 Tuition"
             document.getElementById("essentialincluded").innerHTML = "Whats included:"
-            document.getElementById("essentialdescrip").innerHTML = "<li>Up to 5 Full Year Courses</li>  <li>4 Core + 1 Elective</li>  <li>PEC Support Level 1 (1 Day/Week)</li>  <li>Weekly Homeroom</li>  <li>CI Support</li>  <li>Limited Clubs (1)</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Limited Elective Choices *</li>  <li>No HS Courses/Credit</li> <li style='list-style-type: none;   font-size: 12px;'>*Included elective courses denoted in course catalog</li>"
-             document.getElementById("essentialpowerups").innerHTML= "<div class='tuitionline'>&nbsp;</div><div class='center'><div class='powerupsblue'>Power-Ups</div></div><p class='poweruptext'>PEC Level 2: 2 Total Days/Week</p><p class='powerupsubtext'>$1,500 (Semester) $2,500 (Annual)</p><p class='poweruptext'>PEC Level 3: 3 Total Days/Week + Daily Check-Ins</p><p class='powerupsubtext'>$3,000 (Semester) $5,000 (Annual)</p><p class='powerupsubtext'>Payment Plan Available</p>"
+            document.getElementById("essentialdescrip").innerHTML = "<li>Up to 5 Full Year Courses</li>  <li>4 Core + 1 Elective</li>  <li>Personalized Education Coach (PEC) Support Level 1 (1 Day Per Week)</li>  <li>Weekly Homeroom</li>  <li>Course Instructor (CI) Support</li>  <li>Limited Clubs (1)</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Limited Elective Choices *</li>  <li>No HS Courses/Credit</li> <li style='list-style-type: none;   font-size: 12px;'>*Included elective courses denoted in course catalog</li>"
+            document.getElementById("essentialpowerups").innerHTML = "<div class='tuitionline'>&nbsp;</div><div class='center'><div class='powerupsblue'>Power-Ups</div></div><p class='poweruptext'>PEC Level 2: 2 Total Days Per Week</p><p class='powerupsubtext'>$1,500 (Semester) $2,500 (Annual)</p><p class='poweruptext'>PEC Level 3: 3 Total Days Per Week + Daily Check-Ins</p><p class='powerupsubtext'>$3,000 (Semester) $5,000 (Annual)</p><p class='powerupsubtext'>Payment Plan Available</p>"
             // updating premier card 
             document.getElementById("mostpopular").className = "mostpopular"
             document.getElementById("premierdescrip").className = "tuitiondescrip"
             document.getElementById("premierprice").innerHTML = "$8,500 Tuition"
             document.getElementById("premierincluded").innerHTML = "Whats included:"
-            document.getElementById("premierdescrip").innerHTML = "<li>Up to 6 Full Year Courses</li>  <li>4 Core + 2 Electives</li>  <li>PEC Support Level 1 (1 Day/Week)</li>  <li>Weekly Homeroom</li>  <li>CI Support</li>  <li>Unlimited Club Access</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Full Elective Course Access</li>  <li>HS Courses/Credit</li>"
-              document.getElementById("premierpowerups").innerHTML= "<div class='tuitionline'>&nbsp;</div><div class='center'><div class='powerupsblue'>Power-Ups</div></div><p class='poweruptext'>PEC Level 2: 2 Total Days/Week</p><p class='powerupsubtext'>$1,500 (Semester) $2,500 (Annual)</p><p class='poweruptext'>PEC Level 3: 3 Total Days/Week + Daily Check-Ins</p><p class='powerupsubtext'>$3,000 (Semester) $5,000 (Annual)</p><p class='powerupsubtext'>Payment Plan Available</p>"
+            document.getElementById("premierdescrip").innerHTML = "<li>Up to 6 Full Year Courses</li>  <li>4 Core + 2 Electives</li>  <li>Personalized Education Coach (PEC) Support Level 1 (1 Day Per Week)</li>  <li>Weekly Homeroom</li>  <li>Course Instructor (CI) Support</li>  <li>Unlimited Club Access</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Full Elective Course Access</li>  <li>HS Courses/Credit</li>"
+            document.getElementById("premierpowerups").innerHTML = "<div class='tuitionline'>&nbsp;</div><div class='center'><div class='powerupsgreen'>Power-Ups</div></div><p class='poweruptext'>PEC Level 2: 2 Total Days Per Week</p><p class='powerupsubtext'>$1,500 (Semester) $2,500 (Annual)</p><p class='poweruptext'>PEC Level 3: 3 Total Days Per Week + Daily Check-Ins</p><p class='powerupsubtext'>$3,000 (Semester) $5,000 (Annual)</p><p class='powerupsubtext'>Payment Plan Available</p>"
 
 
         }
         else {
             console.log("High School is loaded")
+            //updating links for the tuition plan names 
+            document.getElementById("personalizedtuitionname").innerHTML = "<https://store.cmasas.org/high-school-personalized-care-year-plan/'>Personalized Care Plan</a> "
+            document.getElementById("essentialtuitionname").innerHTML = "<a href='https://store.cmasas.org/high-school-essential-care-plan/'>Essential Care Plan</a> "
+            document.getElementById("premietuitionname").innerHTML = "<a href='https://store.cmasas.org/high-school-premier-care-plan/'>Premier Care Plan</a>"
             //updating styles for the card
             document.getElementById("personalizeddescrip").className = "tuitiondescriphs"
 
             // updating personalized card             
             document.getElementById("personalizedprice").innerHTML = "$2,750 Tuition"
             document.getElementById("personalizedincluded").innerHTML = "Whats included:"
-            document.getElementById("personalizeddescrip").innerHTML = "  <li>Up to 6 Full Year Courses</li>  <li>4 Core + 2 Electives</li>  <li>College Prep Diploma (Recommended)</li>  <li>PEC Support Level 1 (1 Day/Week)</li>  <li>Weekly Homeroom</li>  <li>CI Support</li>  <li>Unlimited Club Access</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Full Elective Course Access (200+ Courses)</li>  <li>Honors, AP, and Dual Enrollment</li>"
+            document.getElementById("personalizeddescrip").innerHTML = " <li>Low Annual Base Tuition + Pay as You Go for Courses</li>   <li>Personalized Education Coach (PEC) Support Level 1 (1 Day Per Week)</li>  <li>Weekly Homeroom</li>  <li>Course Instructor (CI) Support</li>  <li>Unlimited Club Access</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Full Elective Course Access (200+ Courses)</li>  <li>Honors, AP, and Dual Enrollment</li>"
+            document.getElementById("personalizedpowerups").innerHTML = "<div class='tuitionline'>&nbsp;</div><div class='center'><div class='powerupsred'>Power-Ups</div></div><p class='poweruptext'>PEC Level 2: 2 Total Days Per Week</p><p class='powerupsubtext'>$1,500 (Semester) $2,500 (Annual)</p><p class='poweruptext'>PEC Level 3: 3 Total Days Per Week + Daily Check-Ins</p><p class='powerupsubtext'>$3,000 (Semester) $5,000 (Annual)</p><p class='powerupsubtext'>Payment Plan Available</p> <div class='poweruptext'>          Course Pricing: $850 per semester        </div>"
             // updating essential card 
             document.getElementById("essentialdescrip").className = "tuitiondescriphs"
             document.getElementById("essentialprice").innerHTML = "$9,960 Tuition"
             document.getElementById("essentialincluded").innerHTML = "Whats included:"
-            document.getElementById("essentialdescrip").innerHTML = " <li>Up to 5 Full Year Courses</li>  <li>4 Core + 1 Elective</li>  <li>Standard Diploma (Recommended)</li>  <li>PEC Support Level 1 (1 Day/Week)</li>  <li>Weekly Homeroom</li>  <li>CI Support</li>  <li>Limited Clubs (1)</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Limited Elective Choices</li>  <li>Honors, AP, and Dual Enrollment not included</li> <li style='list-style-type: none;   font-size: 12px;'>*Included elective courses denoted in course catalog</li>"
-             document.getElementById("essentialpowerups").innerHTML= "<div class='tuitionline'>&nbsp;</div><div class='center'><div class='powerupsblue'>Power-Ups</div></div><p class='poweruptext'>PEC Level 2: 2 Total Days/Week</p><p class='powerupsubtext'>$1,500 (Semester) $2,500 (Annual)</p><p class='poweruptext'>PEC Level 3: 3 Total Days/Week + Daily Check-Ins</p><p class='powerupsubtext'>$3,000 (Semester) $5,000 (Annual)</p><p class='powerupsubtext'>Payment Plan Available</p>"
+            document.getElementById("essentialdescrip").innerHTML = " <li>Up to 5 Full Year Courses</li>  <li>4 Core + 1 Elective</li>  <li>Standard Diploma (Recommended)</li>  <li>Personalized Education Coach (PEC) Support Level 1 (1 Day Per Week)</li>  <li>Weekly Homeroom</li>  <li>Course Instructor (CI) Support</li>  <li>Limited Clubs (1)</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Limited Elective Choices</li>  <li>Honors, AP, and Dual Enrollment not included</li> <li style='list-style-type: none;   font-size: 12px;'>*Included elective courses denoted in course catalog</li>"
+            document.getElementById("essentialpowerups").innerHTML = "<div class='tuitionline'>&nbsp;</div><div class='center'><div class='powerupsblue'>Power-Ups</div></div><p class='poweruptext'>PEC Level 2: 2 Total Days Per Week</p><p class='powerupsubtext'>$1,500 (Semester) $2,500 (Annual)</p><p class='poweruptext'>PEC Level 3: 3 Total Days Per Week + Daily Check-Ins</p><p class='powerupsubtext'>$3,000 (Semester) $5,000 (Annual)</p><p class='powerupsubtext'>Payment Plan Available</p>"
             // updating premier card 
             document.getElementById("mostpopular").className = "hsmostpopular"
             document.getElementById("premierdescrip").className = "tuitiondescriphs"
             document.getElementById("premierprice").innerHTML = "$11,750 Tuition"
             document.getElementById("premierincluded").innerHTML = "Whats included:"
-            document.getElementById("premierdescrip").innerHTML = " <li>Up to 6 Full Year Courses</li>  <li>4 Core + 2 Electives</li>  <li>PEC Support Level 1 (1 Day/Week)</li>  <li>Weekly Homeroom</li>  <li>CI Support</li>  <li>Unlimited Club Access</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Full Elective Course Access</li>  <li>HS Courses/Credit</li>"
-            document.getElementById("premierpowerups").innerHTML= "<div class='tuitionline'>&nbsp;</div><div class='center'><div class='powerupsblue'>Power-Ups</div></div><p class='poweruptext'>PEC Level 2: 2 Total Days/Week</p><p class='powerupsubtext'>$1,500 (Semester) $2,500 (Annual)</p><p class='poweruptext'>PEC Level 3: 3 Total Days/Week + Daily Check-Ins</p><p class='powerupsubtext'>$3,000 (Semester) $5,000 (Annual)</p><p class='powerupsubtext'>Payment Plan Available</p>"
+            document.getElementById("premierdescrip").innerHTML = "<li>Up to 6 Full Year Courses</li>  <li>4 Core + 2 Electives</li> <li>College Prep Diploma (Recommended) </li>  <li>Personalized Education Coach (PEC) Support Level 1 (1 Day Per Week)</li>  <li>Weekly Homeroom</li>  <li>Course Instructor (CI) Support</li>  <li>Unlimited Club Access</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>   <li>Full Elective Course Access (200+ Courses)</li>  <li>Honors, AP, and Dual Enrollment</li>"
+            document.getElementById("premierpowerups").innerHTML = "<div class='tuitionline'>&nbsp;</div><div class='center'><div class='powerupsgreen'>Power-Ups</div></div><p class='poweruptext'>PEC Level 2: 2 Total Days Per Week</p><p class='powerupsubtext'>$1,500 (Semester) $2,500 (Annual)</p><p class='poweruptext'>PEC Level 3: 3 Total Days Per Week + Daily Check-Ins</p><p class='powerupsubtext'>$3,000 (Semester) $5,000 (Annual)</p><p class='powerupsubtext'>Payment Plan Available</p>"
 
         }
 
@@ -127,37 +142,41 @@ function selection() {
     else {
         if (schoolType == "elementary") {
             //updating styles for the card
-            document.getElementById("personalizeddescrip").className = "tuitiondescrip"           
+            document.getElementById("personalizeddescrip").className = "tuitiondescrip"
             document.getElementById("essentialdescrip").className = "tuitiondescrip"
             document.getElementById("premierdescrip").className = "tuitiondescrip"
             document.getElementById("mostpopular").className = "mostpopularsemster"
-           
 
-         // updating personalized card 
+
+            // updating personalized card 
             document.getElementById("personalizedprice").innerHTML = ""
             document.getElementById("personalizedincluded").innerHTML = "NOT AVAILABLE FOR SEMESTER PRICING"
             document.getElementById("personalizeddescrip").innerHTML = ""
-            document.getElementById("personalizedpowerups").innerHTML= ""
-           
+            document.getElementById("personalizedpowerups").innerHTML = ""
+
 
             // updating essential card   
             document.getElementById("essentialprice").innerHTML = ""
             document.getElementById("essentialincluded").innerHTML = "NOT AVAILABLE FOR SEMESTER PRICING"
 
             document.getElementById("essentialdescrip").innerHTML = ""
-             document.getElementById("essentialpowerups").innerHTML= ""
-       
-           
+            document.getElementById("essentialpowerups").innerHTML = ""
+
+
             // updating premier card 
             document.getElementById("premierprice").innerHTML = ""
             document.getElementById("premierincluded").innerHTML = "NOT AVAILABLE FOR SEMESTER PRICING"
             document.getElementById("premierdescrip").innerHTML = ""
-             document.getElementById("premierpowerups").innerHTML= ""
+            document.getElementById("premierpowerups").innerHTML = ""
 
         }
         // updating personalized card 
         else if (schoolType == "middle") {
             console.log("Middle School is loaded")
+            //updating links for the tuition plan names             
+            document.getElementById("personalizedtuitionname").innerHTML = "<https://store.cmasas.org/middle-school-personalized-care-plan/'>Personalized Care Plan</a> "
+            document.getElementById("essentialtuitionname").innerHTML = "<a href='https://store.cmasas.org/middle-school-essential-care-plan/'>Essential Care Plan</a> "
+            document.getElementById("premietuitionname").innerHTML = "<a href='https://store.cmasas.org/middle-school-premier-care-plan/'>Premier Care Plan</a>"
             //updating styles for the card
             document.getElementById("personalizeddescrip").className = "tuitiondescrip"
             document.getElementById("essentialdescrip").className = "tuitiondescrip"
@@ -166,44 +185,48 @@ function selection() {
             document.getElementById("personalizedprice").innerHTML = ""
             document.getElementById("personalizedincluded").innerHTML = "NOT AVAILABLE FOR SEMESTER PRICING"
             document.getElementById("personalizeddescrip").innerHTML = ""
-            document.getElementById("personalizedpowerups").innerHTML= ""
-         
+            document.getElementById("personalizedpowerups").innerHTML = ""
+
             // updating essential card 
             document.getElementById("essentialprice").innerHTML = "$4,500 Tuition"
             document.getElementById("essentialincluded").innerHTML = "Whats included:"
-            document.getElementById("essentialdescrip").innerHTML = "<li>Up to 5 Full Year Courses</li>  <li>4 Core + 1 Elective</li>  <li>PEC Support Level 1 (1 Day/Week)</li>  <li>Weekly Homeroom</li>  <li>CI Support</li>  <li>Limited Clubs (1)</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Limited Elective Choices *</li>  <li>No HS Courses/Credit</li> <li style='list-style-type: none;   font-size: 12px;'>*Included elective courses denoted in course catalog</li>"
-                  document.getElementById("essentialpowerups").innerHTML= "<div class='tuitionline'>&nbsp;</div><div class='center'><div class='powerupsblue'>Power-Ups</div></div><p class='poweruptext'>PEC Level 2: 2 Total Days/Week</p><p class='powerupsubtext'>$1,500 (Semester) $2,500 (Annual)</p><p class='poweruptext'>PEC Level 3: 3 Total Days/Week + Daily Check-Ins</p><p class='powerupsubtext'>$3,000 (Semester) $5,000 (Annual)</p><p class='powerupsubtext'>Payment Plan Available</p>"
-            
+            document.getElementById("essentialdescrip").innerHTML = "<li>4 Core + 1 Elective (Semester Courses) </li>   <li>Personalized Education Coach (PEC) Support Level 1 (1 Day Per Week)</li>  <li>Weekly Homeroom</li>  <li>Course Instructor (CI) Support</li>  <li>Limited Clubs (1)</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Limited Elective Choices *</li>  <li>No HS Courses/Credit</li> <li style='list-style-type: none;   font-size: 12px;'>*Included elective courses denoted in course catalog</li>"
+            document.getElementById("essentialpowerups").innerHTML = "<div class='tuitionline'>&nbsp;</div><div class='center'><div class='powerupsblue'>Power-Ups</div></div><p class='poweruptext'>PEC Level 2: 2 Total Days Per Week</p><p class='powerupsubtext'>$1,500 (Semester) $2,500 (Annual)</p><p class='poweruptext'>PEC Level 3: 3 Total Days Per Week + Daily Check-Ins</p><p class='powerupsubtext'>$3,000 (Semester) $5,000 (Annual)</p><p class='powerupsubtext'>Payment Plan Available</p>"
+
             // updating premier card 
             document.getElementById("mostpopular").className = "mostpopular"
             document.getElementById("premierprice").innerHTML = "$5,000 Tuition"
             document.getElementById("premierincluded").innerHTML = "Whats included:"
-            document.getElementById("premierdescrip").innerHTML = "<li>Up to 6 Full Year Courses</li>  <li>4 Core + 2 Electives</li>  <li>PEC Support Level 1 (1 Day/Week)</li>  <li>Weekly Homeroom</li>  <li>CI Support</li>  <li>Unlimited Club Access</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Full Elective Course Access</li>  <li>HS Courses/Credit</li>"
-                  document.getElementById("premierpowerups").innerHTML= "<div class='tuitionline'>&nbsp;</div><div class='center'><div class='powerupsblue'>Power-Ups</div></div><p class='poweruptext'>PEC Level 2: 2 Total Days/Week</p><p class='powerupsubtext'>$1,500 (Semester) $2,500 (Annual)</p><p class='poweruptext'>PEC Level 3: 3 Total Days/Week + Daily Check-Ins</p><p class='powerupsubtext'>$3,000 (Semester) $5,000 (Annual)</p><p class='powerupsubtext'>Payment Plan Available</p>"
+            document.getElementById("premierdescrip").innerHTML = "<li>4 Core + 2 Elective (Semester Courses) </li>    <li>Personalized Education Coach (PEC) Support Level 1 (1 Day Per Week)</li>  <li>Weekly Homeroom</li>  <li>Course Instructor (CI) Support</li>  <li>Unlimited Club Access</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Full Elective Course Access</li>  <li>HS Courses/Credit</li>"
+            document.getElementById("premierpowerups").innerHTML = "<div class='tuitionline'>&nbsp;</div><div class='center'><div class='powerupsgreen'>Power-Ups</div></div><p class='poweruptext'>PEC Level 2: 2 Total Days Per Week</p><p class='powerupsubtext'>$1,500 (Semester) $2,500 (Annual)</p><p class='poweruptext'>PEC Level 3: 3 Total Days Per Week + Daily Check-Ins</p><p class='powerupsubtext'>$3,000 (Semester) $5,000 (Annual)</p><p class='powerupsubtext'>Payment Plan Available</p>"
 
 
         }
         else {
             console.log("High School is loaded")
+            //updating links for the tuition plan names 
+            document.getElementById("personalizedtuitionname").innerHTML = "<https://store.cmasas.org/high-school-personalized-care-year-plan/'>Personalized Care Plan</a> "
+            document.getElementById("essentialtuitionname").innerHTML = "<a href='https://store.cmasas.org/high-school-essential-care-plan/'>Essential Care Plan</a> "
+            document.getElementById("premietuitionname").innerHTML = "<a href='https://store.cmasas.org/high-school-premier-care-plan/'>Premier Care Plan</a>"
             document.getElementById("personalizeddescrip").className = "tuitiondescriphs"
             // updating personalized card             
-             document.getElementById("personalizedprice").innerHTML = ""
-             document.getElementById("personalizedincluded").innerHTML = "NOT AVAILABLE FOR SEMESTER PRICING"
-             document.getElementById("personalizeddescrip").innerHTML = ""
-             document.getElementById("personalizedpowerups").innerHTML= ""
+            document.getElementById("personalizedprice").innerHTML = ""
+            document.getElementById("personalizedincluded").innerHTML = "NOT AVAILABLE FOR SEMESTER PRICING"
+            document.getElementById("personalizeddescrip").innerHTML = ""
+            document.getElementById("personalizedpowerups").innerHTML = ""
             // updating essential card 
             document.getElementById("essentialdescrip").className = "tuitiondescriphs"
             document.getElementById("essentialprice").innerHTML = "$5,700 Tuition"
             document.getElementById("essentialincluded").innerHTML = "Whats included:"
-            document.getElementById("essentialdescrip").innerHTML = " <li>Up to 5 Full Year Courses</li>  <li>4 Core + 1 Elective</li>  <li>Standard Diploma (Recommended)</li>  <li>PEC Support Level 1 (1 Day/Week)</li>  <li>Weekly Homeroom</li>  <li>CI Support</li>  <li>Limited Clubs (1)</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Limited Elective Choices</li>  <li>Honors, AP, and Dual Enrollment not included</li> <li style='list-style-type: none;   font-size: 12px;'>*Included elective courses denoted in course catalog</li>"
-              document.getElementById("essentialpowerups").innerHTML= "<div class='tuitionline'>&nbsp;</div><div class='center'><div class='powerupsblue'>Power-Ups</div></div><p class='poweruptext'>PEC Level 2: 2 Total Days/Week</p><p class='powerupsubtext'>$1,500 (Semester) $2,500 (Annual)</p><p class='poweruptext'>PEC Level 3: 3 Total Days/Week + Daily Check-Ins</p><p class='powerupsubtext'>$3,000 (Semester) $5,000 (Annual)</p><p class='powerupsubtext'>Payment Plan Available</p>"
+            document.getElementById("essentialdescrip").innerHTML = "  <li>4 Core + 1 Elective (Semester Courses) </li>  <li>Standard Diploma (Recommended)</li>  <li>Personalized Education Coach (PEC) Support Level 1 (1 Day Per Week)</li>  <li>Weekly Homeroom</li>  <li>Course Instructor (CI) Support</li>  <li>Limited Clubs (1)</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Limited Elective Choices</li>  <li>Honors, AP, and Dual Enrollment not included</li> <li style='list-style-type: none;   font-size: 12px;'>*Included elective courses denoted in course catalog</li>"
+            document.getElementById("essentialpowerups").innerHTML = "<div class='tuitionline'>&nbsp;</div><div class='center'><div class='powerupsblue'>Power-Ups</div></div><p class='poweruptext'>PEC Level 2: 2 Total Days/Week</p><p class='powerupsubtext'>$1,500 (Semester) $2,500 (Annual)</p><p class='poweruptext'>PEC Level 3: 3 Total Days/Week + Daily Check-Ins</p><p class='powerupsubtext'>$3,000 (Semester) $5,000 (Annual)</p><p class='powerupsubtext'>Payment Plan Available</p>"
             // updating premier card 
             document.getElementById("mostpopular").className = "hsmostpopular"
             document.getElementById("premierdescrip").className = "tuitiondescriphs"
             document.getElementById("premierprice").innerHTML = "$6,700 Tuition"
             document.getElementById("premierincluded").innerHTML = "Whats included:"
-            document.getElementById("premierdescrip").innerHTML = " <li>Up to 6 Full Year Courses</li>  <li>4 Core + 2 Electives</li>  <li>PEC Support Level 1 (1 Day/Week)</li>  <li>Weekly Homeroom</li>  <li>CI Support</li>  <li>Unlimited Club Access</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>  <li>Full Elective Course Access</li>  <li>HS Courses/Credit</li>"
-            document.getElementById("premierpowerups").innerHTML= "<div class='tuitionline'>&nbsp;</div><div class='center'><div class='powerupsblue'>Power-Ups</div></div><p class='poweruptext'>PEC Level 2: 2 Total Days/Week</p><p class='powerupsubtext'>$1,500 (Semester) $2,500 (Annual)</p><p class='poweruptext'>PEC Level 3: 3 Total Days/Week + Daily Check-Ins</p><p class='powerupsubtext'>$3,000 (Semester) $5,000 (Annual)</p><p class='powerupsubtext'>Payment Plan Available</p>"
+            document.getElementById("premierdescrip").innerHTML = " <li>4 Core + 2 Elective (Semester Courses) </li>   <li>Personalized Education Coach (PEC) Support Level 1 (1 Day Per Week)</li>  <li>Weekly Homeroom</li>  <li>Course Instructor (CI) Support</li>  <li>Unlimited Club Access</li>  <li>Regional Gathering Opportunities</li>  <li>International Trip Opportunities</li>   <li>Full Elective Course Access (200+ Courses)</li>  "
+            document.getElementById("premierpowerups").innerHTML = "<div class='tuitionline'>&nbsp;</div><div class='center'><div class='powerupsgreen'>Power-Ups</div></div><p class='poweruptext'>PEC Level 2: 2 Total Days/Week</p><p class='powerupsubtext'>$1,500 (Semester) $2,500 (Annual)</p><p class='poweruptext'>PEC Level 3: 3 Total Days/Week + Daily Check-Ins</p><p class='powerupsubtext'>$3,000 (Semester) $5,000 (Annual)</p><p class='powerupsubtext'>Payment Plan Available</p>"
 
 
 
